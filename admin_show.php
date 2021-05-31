@@ -2,7 +2,7 @@
     $str='';
     $questionnaire_result = [];
 
-    $file = fopen('./data/questionnaire_data.txt','r');
+    $file = fopen('./data/questionnaire_data.csv','r');
     flock($file, LOCK_EX);
 
     if($file){

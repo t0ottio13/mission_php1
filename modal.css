@@ -1,0 +1,40 @@
+/*infoエリアをはじめは非表示*/
+#login{
+	display: none;
+}
+
+#login_btn{
+    width: 100px;
+    color: white;
+    background-color: #00A7EA;
+    border: none;
+    opacity: 0.8;
+    margin-left:50px;
+}
+
+#login li{
+    margin: 40px 0;
+}
+
+#login_btn:hover{
+    opacity: 1.0;
+}
+
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container{
+    max-width: 600px;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before{
+	background:#ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}

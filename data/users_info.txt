@@ -1,0 +1,3 @@
+hoge hoge@example.com $2y$10$GIReIqWtasLrnR6lUvFzDOMxRVoox.22ppIprltQ0xmgzPZCCTzz. 
+hoge hoge@example.com $2y$10$YeVtDBNSjBvzoTAEC1CWUuVnFAqbiS2TJyGdxEPrV4SJp.PoDfPHK 
+hoge foobar@example.com $2y$10$i8WvTZJDXRCVCp5DU.UpZeBtH2njlUuA.5bqwPxbCj9qO0qfzUcAq 

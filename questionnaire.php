@@ -14,7 +14,7 @@ $adviser_name = $_POST["adviser_name"];
 $write_data ="{$adviser_name} {$question1} {$question2} {$question3} {$question4} {$question5} {$advise_text}\n";
 // var_dump($write_data);
 // exit();
-$file = fopen('data/questionnaire_data.txt', 'a');
+$file = fopen('data/questionnaire_data.csv', 'a');
 flock($file, LOCK_EX);
 fwrite($file, $write_data);
 flock($file, LOCK_UN);

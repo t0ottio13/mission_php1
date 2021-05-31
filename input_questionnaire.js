@@ -9,3 +9,4 @@ $('#question1_plus_btn').on('click', () => {
 
     alert($('#question1_count').val());
 })
+

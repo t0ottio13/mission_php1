@@ -1,0 +1,33 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 100px;
+    background-color: dimgrey;
+    opacity: 0.8;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    color: white;
+}
+
+header div{
+    margin: 0 40px;
+}
+
+header h1{
+    font-size: 24px;
+}
+
+header a{
+    color: white;
+    margin-left: 10px;
+}
+
+main{
+    margin: 20px 60px;
+}
