@@ -9,14 +9,15 @@
     background-color: #00A7EA;
     border: none;
     opacity: 0.8;
-    margin-left:50px;
+    margin-top:20px;
+    border-radius: 5px;
 }
 
 #login li{
     margin: 40px 0;
 }
 
-#login_btn:hover{
+.login_btn:hover{
     opacity: 1.0;
 }
 
@@ -37,4 +38,12 @@
 .modaal-close:hover:after,
 .modaal-close:hover:before{
 	background:#666;
+}
+
+
+.login_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

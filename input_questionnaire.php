@@ -1,16 +1,5 @@
 <?php
-    // if(isset($_POST["question1"])
-    //     &&($_POST["question1"]==1
-    //     ||$_POST["question1"]==2
-    //     ||$_POST["question1"]==3
-    //     ||$_POST["question1"]==4
-    //     ||$_POST["question1"]==5))
-    //     {
-    //         print "回答：";
-    //         print $_POST["question1"];
-    // }else{
-    //         print "回答が未入力です";
-    // }
+
 
 ?>
 
@@ -30,36 +19,28 @@
 </head>
 <body>
     <header>
-    <div><h1>カベ打ち感想アンケート</h1></div>
+    <div><h1>感想アンケート</h1></div>
     <div class="login_sign_up">
         <a href="#login" class="modal-open">ログイン</a>
         <a href="./signup.php">管理者登録</a>
     </div>
 
     <section id="login">
-        <ul>
-            <li>
-                <label for="name">管理者名 </label>
-                <input type="name" id="name">
-            </li>
-            <li>
-                <label for="email">メールアドレス</label>
-                <input type="email" id="email">
-            </li>
-            <li>
-                <label for="password">パスワード</label>
-                <input type="password" id="password">
-            </li>
-            <li>
-                <input type="button" value="ログインする" id="login_btn">
-            </li>
-        </ul>
+        <form action="./login.php" method="POST">
+            <ul class="login_container">
+                <li><label for="name">管理者名 </label></li>
+                <li><input type="name" name="name" class="login"></li>
+                <li><label for="email">メールアドレス</label></li>
+                <li><input type="email" name="email" class="login"></li>
+                <li><label for="password">パスワード</label></li>
+                <li><input type="password" name="password" class="login"></li>
+                <li><input type="submit" value="ログインする" id="login_btn" class="login_btn"></li>
+            </ul>
+        </form>
     </section>
     </header>
     <main>
         <form action="./questionnaire.php" method="POST">
-        <fieldset>
-            <legend>回答欄</legend>
             <div>
                 <ul>
                     <li>
@@ -73,7 +54,7 @@
                         <input name="question1" type= "radio" value="5">
                     </li>
                     <li>
-                        <p>2. Who／What は明確でしたか？</p>
+                        <p>2. Who は明確でしたか？</p>
                         <input name="question2" type= "radio" value="1">
                         <input name="question2" type= "radio" value="2">
                         <input name="question2" type= "radio" value="3">
@@ -81,7 +62,7 @@
                         <input name="question2" type= "radio" value="5">
                     </li>
                     <li>
-                        <p>3. How は伝わりましたか？</p>
+                        <p>3. what は明確でしたか？</p>
                         <input name="question3" type= "radio" value="1">
                         <input name="question3" type= "radio" value="2">
                         <input name="question3" type= "radio" value="3">
@@ -116,7 +97,6 @@
             <div>
                 <button>送信</button>
             </div>
-        </fieldset>
         </form>
     </main>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->

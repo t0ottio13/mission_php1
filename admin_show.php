@@ -35,8 +35,10 @@
     <title>アンケート結果確認</title>
 </head>
 <body>
-    <h1>アンケート結果確認画面</h1>
-    <h2>質問別 伝わった度</h2>
+    <header>
+        <h1>アンケート結果確認画面</h1>
+    </header>
+    <h2>項目別 評価</h2>
     <canvas id="result_chart"></canvas>
     <h2>アドバイス一覧</h2>
     <div class="advise">
@@ -94,7 +96,7 @@
                 datasets: [
                     {
                         // 質問1 のグラフ
-                        label: "question1",
+                        label: "Why me",
                         data: sum_question1_result,
                         // backgroundColor: "#d3381c"
                         backgroundColor: "#d0576b"
@@ -102,19 +104,19 @@
                     },
                     {
                         // 質問2 のグラフ
-                        label: "question2",
+                        label: "Who",
                         data: sum_question2_result,
                         backgroundColor: "#f6ad49"
                     },
                     {
                         // 質問3のグラフ
-                        label: "question3",
+                        label: "What",
                         data: sum_question3_result,
                         backgroundColor: "#769164"
                     },
                     {
                         // 質門4 のグラフ
-                        label: "question4",
+                        label: "課題・問題",
                         data: sum_question4_result,
                         // backgroundColor: "#5a544b"
                         backgroundColor: "#00A7EA"
@@ -122,7 +124,7 @@
                     },
                     {
                         // 質問5 のグラフ
-                        label: "question5",
+                        label: "解決策",
                         data: sum_question5_result,
                         // backgroundColor: "#d0576b"
                         backgroundColor: "#C4C4C4"

@@ -20,7 +20,7 @@ fwrite($file, $write_data);
 flock($file, LOCK_UN);
 fclose($file);
 
-header('Location:input_questionnaire.php');
+header('Location:thank_you.php');
 
 
 ?>
