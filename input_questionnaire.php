@@ -41,10 +41,12 @@
     </header>
     <main>
         <form action="./questionnaire.php" method="POST">
-            <div>
+            <div class="main_form">
                 <ul>
+                    <li><p class="attention">※ 5点満点で評価をお願いします。</p></li>
                     <li>
                         <p>1. Why me? は伝わりましたか？</p>
+                        <p><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></p>
                         <!-- <div id="question1_plus_btn"><span class="fas fa-plus-circle"></span></div>
                         <div id="question1_count" name="question1">0</div> -->
                         <input name="question1" type= "radio" value="1">
@@ -55,6 +57,7 @@
                     </li>
                     <li>
                         <p>2. Who は明確でしたか？</p>
+                        <p><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></p>
                         <input name="question2" type= "radio" value="1">
                         <input name="question2" type= "radio" value="2">
                         <input name="question2" type= "radio" value="3">
@@ -63,6 +66,7 @@
                     </li>
                     <li>
                         <p>3. what は明確でしたか？</p>
+                        <p><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></p>
                         <input name="question3" type= "radio" value="1">
                         <input name="question3" type= "radio" value="2">
                         <input name="question3" type= "radio" value="3">
@@ -71,6 +75,7 @@
                     </li>
                     <li>
                         <p>4. 問題点、課題点 は整理されてましたか？</p>
+                        <p><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></p>
                         <input name="question4" type= "radio" value="1">
                         <input name="question4" type= "radio" value="2">
                         <input name="question4" type= "radio" value="3">
@@ -79,6 +84,7 @@
                     </li>
                     <li>
                         <p>5. 解決策 は適切でしたか？</p>
+                        <p><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></p>
                         <input name="question5" type= "radio" value="1">
                         <input name="question5" type= "radio" value="2">
                         <input name="question5" type= "radio" value="3">
@@ -89,12 +95,13 @@
                         <p>アドバイス</p>
                         <textarea type="text" name="advise_text"></textarea>
                     </li>
+                    <li>
+                        <p>回答者<p>
+                        <input type="name" name="adviser_name">
+                    </li>
                 </ul>
             </div>
-            <div>
-                回答者: <input type="name" name="adviser_name">
-            </div>
-            <div>
+            <div class="main_btn">
                 <button>送信</button>
             </div>
         </form>
